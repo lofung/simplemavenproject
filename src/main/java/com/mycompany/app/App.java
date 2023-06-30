@@ -1,5 +1,4 @@
-package com.centennial.mavenproject4docker;
-
+package com.mycompany.app;
 
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
@@ -23,12 +22,11 @@ public class App
     static class MyHandler implements HttpHandler {
         @Override
         public void handle(HttpExchange t) throws IOException {
-            String response = "<h1> Welcome to COMP367! I just Dockerized a Maven Project </h1>";
+            String response = "<h1> Hello World!!!! I just Dockerized a Maven Project </h1>";
             t.sendResponseHeaders(200, response.length());
             OutputStream os = t.getResponseBody();
             os.write(response.getBytes());
             os.close();
         }
     }
-
 }

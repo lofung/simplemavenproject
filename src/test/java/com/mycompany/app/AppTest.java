@@ -1,4 +1,4 @@
-package com.centennial.mavenproject4docker;
+package com.mycompany.app;
 
 import static org.junit.Assert.assertTrue;
 
